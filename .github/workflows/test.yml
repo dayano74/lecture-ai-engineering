@@ -20,8 +20,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest great_expectations pandas scikit-learn flake8 black mypy pytest-cov
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install pytest great_expectations pandas scikit-learn flake8 black mypy pytest-cov psutil
+        if [ -f day5/requirements.txt ]; then pip install -r day5/requirements.txt; fi
         
     - name: Lint with flake8
       run: |
